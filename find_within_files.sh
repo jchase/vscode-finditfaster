@@ -19,6 +19,7 @@ fi
 RG_PREFIX=(rg 
     --column
     --hidden
+    --multiline
     $(array_join ${USE_GITIGNORE_OPT+"${USE_GITIGNORE_OPT[@]}"})
     --line-number
     --no-heading
